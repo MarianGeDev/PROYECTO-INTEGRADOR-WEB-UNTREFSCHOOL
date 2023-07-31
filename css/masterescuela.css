@@ -1,56 +1,218 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-ul{
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+}
+
+ul {
     list-style-type: none;
 }
-a{
-    text-decoration: none;
-}
 
-html{
-scroll-behavior: smooth;
-   
-}
-
-body{
-    background-color: #eff5f5;
-    font-family:'Poppins', sans-serif;
-    font-size: 0.75rem;
-}
-img {
-    border-radius: 20px;
-    padding: 5px;
+h1 {
+    font-size: 2.18rem;
+    color: #eff575;
+    padding: 15px;
     width: 100%;
-  }   
-/*css encabezado*/
+    text-align: end;
+    background-color: #1f8a70;
+    margin-top: 30px;
+    margin-bottom: 50px;
 
-#logo{
-    width: 160px;
-    padding-top: 10px;
 }
 
-#subtituloBanner{
+.columna1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    align-content: start;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+#fotoPortada {
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0.5rem auto;
+    box-shadow: black;
+    border-radius: 10px;
+    z-index: 1;
+
+}
+
+.banner img {
+    margin: 0.5rem;
+    border: 0.063rem solid #ddd;
+    border-radius: 0.25rem;
+    padding: 0.313rem;
+    width: 100%;
+    height: auto;
+    opacity: 0.57;
+}
+
+.banner p {
     position: absolute;
-    top: 400px;
-    color: white;
-    background-color: rgba(0,0,0, 0.6);
-    padding: 20px;
+    font-size: 1.50rem;
+    background-color: #fc7300;
     width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.70rem;
+    color: #181823;
+    bottom: -1.5rem;
     text-align: center;
-}
-h1{
-    top: 400px;
-    font-size: 1.30rem;
-    color:#fc7300;
-    border-radius: 60px 20px;
-    background-color:#00425a;
-    padding: 10px;
-    width: 100%;
-    text-align: justify;
+    z-index: 2;
 }
 
+
+.grillaNoticias {
+    padding: 40px 40px 60px 40px;
+    font-size: 13px;
+    margin: 10px;
+}
+
+.grillaNoticias .noticiasTitulo {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+    color: #1f8a70;
+}
+
+.grillaNoticias i {
+    font-size: 1.5rem;
+    color: #fc7300;
+}
+
+.grillaNoticias .columna {
+    padding: 20px;
+    border: 1px solid #00425a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.grillaNoticias h1 {
+    text-align: center;
+    background-color: #fc7300;
+}
+
+
+#piePagina {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    align-content: start;
+    justify-content: space-between;
+}
+
+#redesSociales {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+ion-icon {
+    color: #00425a;
+    font-size: 2rem;
+    align-self: end;
+}
+
+#logoPie {
+    width: 70%;
+    height: 50%;
+    margin-left: 1.7rem;
+}
+
+/* formulario */
+
+h2 {
+    font-size: 1.5rem;
+    color: #eff575;
+    padding: 15px;
+    width: 95%;
+    text-align: center;
+    background-color: #1f8a70;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border: #181823;
+    border-radius: 3px;
+
+}
+
+#formularioContacto {
+    background-image: url(../Img/formulario.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+form {
+    background-color: #eff575;
+    border-radius: 3px;
+    color: #00425a;
+    font-size: 0.8em;
+    padding: 50px;
+    margin: auto;
+    width: 400px;
+    height: 510px;
+}
+
+input,
+textarea {
+    border: 0;
+    outline: none;
+    width: 280px;
+}
+
+.formato {
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+
+@media (min-width: 1200px) {
+    #piePagina {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        display: none;
+    }
+
+    .banner p {
+        top: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar-brand {
+        display: none;
+    }
+
+    .banner p {
+        top: 1rem;
+        font-size: 0.50rem;
+    }
+}
