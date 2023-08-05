@@ -9,63 +9,61 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="shortcut icon" href="./Img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/masterescuela.css">
-
-
 </head>
 
 <body>
-    <section id="formularioContacto">
-        <h2 id="contacto" class="destacado">Dejanos tus datos para recibir información y asesoramiento:</h2>
-        <form action="https://formsubmit.co/untrefschool@gmail.com" method="POST">
-            <div>
-                <label class="destacado" for="nombre"></label>
-                <br>
-                <input class="formato" type="text" name="nombre" value="" id="nombre" required
-                    placeholder="Nombre del padre/madre" minlength="3" maxlength="20">
+    <h1 id="tituloFormulario" class="text-center">Dejanos tus datos para recibir información y asesoramiento:</h1>
+    <section id="formularioContacto" class="row">
+        <form action="https://formsubmit.co/untrefschool@gmail.com" method="POST"
+            class="col-12 col-md-4 m-auto needs-validation _formulario" novalidate>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" aria-describedby="nameHelp" required
+                    placeholder="Indique su nombre">
+                <div id="nameHelp" class="form-text valid-feedback">
+
+                </div>
+                <div id="nameHelp" class="form-text invalid-feedback">
+
+                </div>
             </div>
-            <div>
-                <label class="destacado" for="nombre"></label>
-                <br>
-                <input class="formato" type="text" name="nombre" value="" id="nombre" required
-                    placeholder="Apellido del padre/madre" minlength="3" maxlength="20">
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" aria-describedby="lastNameHelp"
+                    placeholder="Indique su apellido" required>
+                <div id="lastNameHelp" class="form-text valid-feedback">
+
+                </div>
+                <div id="lastNameHelp" class="form-text invalid-feedback">
+                </div>
             </div>
-            <div>
-                <label class="destacado" for="Email"></label>
-                <br>
-                <input class="formato" type="text" name="Email" value="" id="Email" required
-                    placeholder=" Ingrese su email" minlength="3" maxlength="20">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                <div id="emailHelp" class="form-text">Indique su email ejemplo@gmail.com</div>
             </div>
-            <div>
-                <label class="destacado" for="whatsapp"></label>
-                <br>
-                <input class="formato" type="tel" name="whatsapp" value="" id="whatsapp" required
-                    placeholder="Ingrese su telefono">
-            </div>
-            <div>
-                <label class="destacado" for="comentario"></label>
-                <br>
-                <textarea class="formato" name="comentario" id="comentario" cols="30" rows="10" required
-                    placeholder="Indique sus comentarios"></textarea>
+            <div class="mb-3">
+                <label for="observaciones" class="form-label">Comentarios:</label>
+                <textarea class="form-control" id="observaciones" rows="3"></textarea>
             </div>
             <div>
                 <button type="submit" class="btn btn-success">¡Quiero recibir información!</button>
             </div>
         </form>
-        <div>
+    </section>
+    <footer>
+        <p>Untref School © 2023. Todos los derechos reservados.</p>
+    </footer>
 
-            <footer>
-                <p>
-                    Untref School © 2023. Todos los derechos reservados.</p>
-            </footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-                integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-                integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-                crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
 
 </body>
 

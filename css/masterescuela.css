@@ -1,3 +1,5 @@
+/*CSS general*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap');
 
 * {
@@ -9,37 +11,42 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
-}
+    background: #36454F;
+
+    }
 
 ul {
     list-style-type: none;
 }
 
 h1 {
-    font-size: 2.18rem;
+    font-size: 1.50rem;
     color: #eff575;
     padding: 15px;
     width: 100%;
     text-align: end;
     background-color: #1f8a70;
-    margin-top: 30px;
-    margin-bottom: 50px;
-
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
-.columna1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    align-content: start;
-    justify-content: space-between;
-    padding: 30px;
+
+/* CSS al banner*/
+
+.item{
+    scroll-margin-top: 90px;
 }
+
+.item1{
+    scroll-margin-top: 85px;
+}
+
 
 #fotoPortada {
     width: 100%;
 }
+
+/*Css al Banner*/
 
 .banner {
     position: relative;
@@ -48,64 +55,117 @@ h1 {
     margin: 0.5rem auto;
     box-shadow: black;
     border-radius: 10px;
-    z-index: 1;
+    z-index: 1000;
 
 }
 
 .banner img {
-    margin: 0.5rem;
-    border: 0.063rem solid #ddd;
     border-radius: 0.25rem;
     padding: 0.313rem;
     width: 100%;
-    height: auto;
     opacity: 0.57;
 }
 
-.banner p {
-    position: absolute;
-    font-size: 1.50rem;
-    background-color: #fc7300;
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 0.70rem;
-    color: #181823;
-    bottom: -1.5rem;
-    text-align: center;
-    z-index: 2;
+.titulo{
+        position: absolute;
+        top: 320px;
+        font-size: 1.40rem;
+        color: #eff575;
+        background-color: rgba(0,0,0, 0.6);
+        background-position: center;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
 }
 
-
-.grillaNoticias {
-    padding: 40px 40px 60px 40px;
-    font-size: 13px;
-    margin: 10px;
-}
-
-.grillaNoticias .noticiasTitulo {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0px;
-    color: #1f8a70;
-}
-
-.grillaNoticias i {
-    font-size: 1.5rem;
-    color: #fc7300;
-}
-
-.grillaNoticias .columna {
-    padding: 20px;
-    border: 1px solid #00425a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
+/* Css Noticias*/
 
 .grillaNoticias h1 {
     text-align: center;
-    background-color: #fc7300;
+    margin-top: 50px;
+}
+
+
+.container1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+    margin-top: -80px;
+}
+
+.container1 .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container1 .card:hover {
+    height: 400px;
+}
+
+.container1 .card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-left: 25px;
+    transition: 0.5s;
+}
+
+.container1 .card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container1 .card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container1 .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container1 .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.container1 .card .content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:#fc7300;
+}
+
+.container1 .card .content p {
+    color: #1f8a70;
 }
 
 
@@ -124,10 +184,12 @@ h1 {
     gap: 10px;
 }
 
+
 ion-icon {
-    color: #00425a;
+    color: #eff575;
     font-size: 2rem;
     align-self: end;
+
 }
 
 #logoPie {
@@ -136,7 +198,12 @@ ion-icon {
     margin-left: 1.7rem;
 }
 
-/* formulario */
+#textofooter a{
+    color: #eff575;
+}
+
+
+/* CSS al formulario */
 
 h2 {
     font-size: 1.5rem;
@@ -157,11 +224,10 @@ h2 {
     background-image: url(../Img/formulario.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 650px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    margin-left: 30px;
+    height:100%;
+   
 }
+
 
 form {
     background-color: #eff575;
@@ -169,7 +235,6 @@ form {
     color: #00425a;
     font-size: 0.8em;
     padding: 50px;
-    margin: auto;
     width: 400px;
     height: 510px;
 }
@@ -181,10 +246,15 @@ textarea {
     width: 280px;
 }
 
-.formato {
-    border: solid 1px #ccc;
-    padding: 10px;
+
+footer{
+   background-color: #1f8a70; 
+   padding: 20px;
 }
+
+
+
+
 
 @media (min-width: 1200px) {
     #piePagina {
@@ -197,22 +267,32 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-    .navbar-brand {
-        display: none;
-    }
 
-    .banner p {
-        top: 3.5rem;
+    #piePagina {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        align-content: start;
+        justify-content: space-between;
     }
+ 
 }
 
 @media screen and (max-width: 320px) {
-    .navbar-brand {
-        display: none;
+   
+    #piePagina {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        align-content: start;
+        justify-content: space-between;
     }
+iframe{
+    width: 300px;
+    height: 200px;
+}
+    
 
-    .banner p {
-        top: 1rem;
-        font-size: 0.50rem;
-    }
 }
